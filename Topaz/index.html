@@ -1,0 +1,34 @@
+<!doctype html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta http-equiv="origin-trial" content="Anx9M3J0aHLpGAMe3zP5qpGiORIM9XVPn0kCEMBGlIzpUAmigST4zEpCybneyUtCHHt8N6xJqNEI/eczFA3E8QoAAAB6eyJvcmlnaW4iOiJodHRwczovL3d3dy5zaWdwbHVzd2ViLmNvbTo0NDMiLCJmZWF0dXJlIjoiQWxsb3dTeW5jWEhSSW5QYWdlRGlzbWlzc2FsIiwiZXhwaXJ5IjoxNTk1MTc3MTgxLCJpc1N1YmRvbWFpbiI6dHJ1ZX0=">
+  <title>Topaz SigWeb</title>
+  <script type="text/javascript" src="JS/SigWebTablet.js"></script>
+  <script type="text/javascript" src="JS/Function.js"></script>
+</head>
+<body>
+  <table border="1" cellpadding="0"  width="500">
+    <tr>
+      <td height="100" width="500">
+        <canvas id="cnv" name="cnv" width="500" height="100"></canvas>
+      </td>
+    </tr>
+  </table>
+    <form action="#" name=FORMSIG>
+      <p>
+        <input id="SignBtn" name="SignBtn" type="button" value="Firmar"  onclick="javascript:onSign()"/>&nbsp;&nbsp;&nbsp;&nbsp;<!--allows set space between tag button-->
+        <input id="button1" name="ClearBtn" type="button" value="Limpiar" onclick="javascript:onClear()"/>&nbsp;&nbsp;&nbsp;&nbsp;<!--allows set space between tag button-->
+
+        <input id="button2" name="DoneBtn" type="button" value="Convertir Formato" onclick="javascript:converterFormat()"/>&nbsp;&nbsp;&nbsp;&nbsp;<!--allows set space between tag button-->
+
+        <INPUT TYPE=HIDDEN NAME="bioSigData">
+          <INPUT TYPE=HIDDEN NAME="sigImgData">
+            <br>
+              <br>
+                <TEXTAREA NAME="sigStringData" ROWS="20" COLS="50">Cadena Firma: </TEXTAREA>
+                <TEXTAREA NAME="sigImageData" ROWS="20" COLS="50">Base64: </TEXTAREA>
+                <img name="firma" style="width: auto; height: auto; ">
+     </p>
+    </form>
+    </body>
+ </html>
